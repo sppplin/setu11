@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Stylized rising golden star of capability -->
+    <path
+        android:fillColor="#FFFF8F00"
+        android:pathData="M54,26 l3.5,8.5 l9,1.5 l-6.5,6.5 l1.5,9 l-7.5,-4.5 l-7.5,4.5 l1.5,-9 l-6.5,-6.5 l9,-1.5 z" />
+    <!-- Stylized white bridge representing career connections -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M24,66 c10,-12 20,-12 30,-12 s20,0 30,12 v8 h-60 z" />
+    <!-- Inner bridge span for architectural visual details -->
+    <path
+        android:fillColor="#FFE0F2F1"
+        android:pathData="M29,74 c8,-8 17,-8 25,-8 s17,0 25,8 v1 h-50 z" />
+</vector>

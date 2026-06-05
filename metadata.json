@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Rozgaar Setu",
+  "description": "A trusted digital bridge connecting job seekers with blue-collar, grey-collar, and localized job opportunities, enriched with a smart AI Career Counselor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
