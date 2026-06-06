@@ -1,0 +1,16 @@
+workflows:
+  android-release:
+    name: Android Release
+    max_build_duration: 60
+
+    environment:
+      java: 17
+
+    scripts:
+      - chmod +x gradlew
+      - ./gradlew assembleRelease
+      - ./gradlew bundleRelease
+
+    artifacts:
+      - app/build/outputs/**/*.apk
+      - app/build/outputs/**/*.aab
