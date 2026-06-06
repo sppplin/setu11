@@ -1,12 +1,15 @@
 workflows:
-  android-debug:
-    name: Android Debug Build
+  android-release:
+    name: Android Release
 
     environment:
       java: 17
 
+      android_signing:
+        - upload_key
+
     scripts:
-      - gradle assembleDebug
+      - gradle assembleRelease
 
     artifacts:
       - app/build/outputs/**/*.apk
