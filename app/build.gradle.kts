@@ -18,9 +18,26 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+signingConfigs {
+    create("release") {
+        storeFile = file(System.getenv("CM_KEYSTORE_PATH"))
+        storePassword = System.getenv("CM_KEYSTORE_PASSWORD")
+        keyAlias = System.getenv("CM_KEY_ALIAS")
+        keyPassword = System.getenv("CM_KEY_PASSWORD")
+    }
+}
     }
 
     buildTypes {
+release {
+    isMinifyEnabled = false
+    signingConfig = signingConfigs.getByName("release")
+
+    proguardFiles(
+        getDefaultProguardFile("proguard-android-optimize.txt"),
+        "proguard-rules.pro"
+    )
+}
         release {
             isCrunchPngs = false
             isMinifyEnabled = false
